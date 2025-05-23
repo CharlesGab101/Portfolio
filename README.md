@@ -4,7 +4,7 @@ This is my home page! My name is Charles Edwill Gabut and I am a student at [Cal
 
 ## Computer Science Projects
 
-My GitHub page is https://github.com/CharlesGab.
+My GitHub page is https://github.com/CharlesGab101
 
 ### CPSC 120
 
