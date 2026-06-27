@@ -1,0 +1,415 @@
+.frame {
+    /* Desktop - 1 */
+
+    /* Frame 2 */
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    height: 152px;
+    border-bottom: 2px solid #4d4d4d;
+    background: #000000;
+}
+
+.frame button {
+    background: none;
+    border-radius: 16px;
+    padding: 12px 40px;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid #4d4d4d;
+    transition: all 0.3s ease-in-out;  /* Add this */
+}
+
+.frame button:hover {
+    background: #ffffff;
+    color: black;
+}
+
+.frame_about {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    height: 100px;
+    background: #434141;
+}
+
+.frame_about button {
+    
+    background: none;
+    border-radius: 16px;
+    padding: 6px 22px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    margin-right: 60px;
+    
+}
+
+.frame_about button:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.frame_skills {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    background: #434141; 
+}
+
+.name-page {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: var(--font-poppins);
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.frame_skills button {
+    
+    background: none;
+    border-radius: 16px;
+    padding: 6px 22px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    margin-right: 60px;
+}
+
+.frame_skills button:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.text_header {
+    /* Hi I am CharlesYour reliable Front-end Developer */
+
+    position: absolute;
+    width: 672px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    flex-wrap: wrap;
+}
+
+.text_header_static {
+    /* Hi I am CharlesYour reliable Front-end Developer */
+
+    position: absolute;
+    width: 672px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40%;
+    margin-left: 50%;
+}
+
+.profile-picturep-about{
+    object-fit: cover;
+    width: 1100px;
+    height:auto;
+}
+
+h1 {
+    padding: 0 40px;
+    color: #ffffff;
+    font-size: 32px;
+    margin-top: 23px;
+    font-family: var(--font-poppins);
+}
+
+.flip-card-front h1,
+.project-card-title {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.project-tags p {
+    margin: 0;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 150px;
+}
+.about p {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.about-name {
+    display: flex;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.about-title {
+    display: flex;
+    color: #ffffff;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.about-description {
+    display: flex;
+    color: #ffffff;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-poppins);
+}
+
+
+.about h2 {
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: var(--font-poppins);
+}
+
+/* ==========================================================================
+   PROJECTS GRID & FLIP CARD MECHANICS
+   ========================================================================== */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+/* 1. Base Container: Sets the grid cell dimensions and 3D environment */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px; 
+    height: 500px; /* Inherited from your original height */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Slight lift effect on the entire card when hovering */
+.flip-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 2. Inner Wrapper: Manages the 3D rotation pivot */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+/* Flips the card when the React state adds the class */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg); /* Changed to rotateY for a clean horizontal flip */
+}
+
+/* 3. Shared Side Panels: Flexbox centering and styling */
+.flip-card-front, 
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari optimization */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 24px 40px;
+    border: 2px solid #4d4d4d;
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    transition: background 0.3s, border-color 0.3s;
+}
+
+/* Front Design Styling */ 
+.flip-card-front {
+    background: #111111;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Back Design Styling */
+.flip-card-back {
+    background: #1c1c1c; 
+    transform: rotateY(180deg); /* Starts reversed to look right side up when flipped */
+}
+
+/* Hover highlights for active panels */
+.flip-card:hover .flip-card-front,
+.flip-card:hover .flip-card-back {
+    background: #262626;
+    border-color: #ffffff;
+}
+
+/* ==========================================================================
+   INTERNAL CARD ELEMENTS
+   ========================================================================== */
+
+.projects h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: var(--font-poppins);
+    font-size: 24px;
+}
+
+.items-project {
+   padding-top: 50px;
+}
+
+.projects p {
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.1);  
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    display: inline-block;
+    max-width: 280px; 
+    text-align: center; 
+    font-weight: 400;
+    font-family: var(--font-poppins);
+}
+
+.project-image {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    object-fit: contain; /* Prevents project screenshots or gifs from getting cut off */
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.view-site-button {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.view-site-button button {
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #f7f7f7, #c8c8c8);
+    color: #111111;
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.view-site-button button:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+    background: linear-gradient(145deg, #dddddd, #b7b7b7);
+}
+
+.view-site-button:active {
+    transform: scale(0.91);
+}
