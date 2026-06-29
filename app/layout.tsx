@@ -20,6 +20,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Charles Gabut Portfolio",
   description: "Software Developer Portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 const poppins = Poppins({
   variable: "--font-poppins",

@@ -9,6 +9,22 @@ interface ProjectCardProps {
     project: ProjectType;
 }
 
+function getLanguageClass(language: string) {
+    const value = language.toLowerCase();
+
+    if (value.includes("c++")) return "project-tag tag-cpp";
+    if (value.includes("html/css")) return "project-tag tag-web";
+    if (value.includes("javascript")) return "project-tag tag-javascript";
+    if (value.includes("typescript")) return "project-tag tag-typescript";
+    if (value.includes("java")) return "project-tag tag-java";
+    if (value.includes("python")) return "project-tag tag-python";
+    if (value.includes("react")) return "project-tag tag-react";
+    if (value.includes("premiere")) return "project-tag tag-video";
+    if (value.includes("object-oriented")) return "project-tag tag-oop";
+
+    return "project-tag tag-default";
+}
+
 function ProjectCard({project}: ProjectCardProps) {
     const [flip, setFlip] = useState<boolean>(false);
     return (
@@ -16,6 +32,10 @@ function ProjectCard({project}: ProjectCardProps) {
             className={`flip-card ${flip ? 'flipped' : ''}`} 
             onClick={() => setFlip(!flip)}
             >
+                <div className="hover-indicator" aria-hidden="true">
+                    {!flip ? <span>Click to flip</span> : null}
+                </div>
+
                 {/* Inner container handles the actual 3D rotation */}
                 <div className="flip-card-inner">
                     
@@ -29,13 +49,13 @@ function ProjectCard({project}: ProjectCardProps) {
                                     src={project.image}
                                     alt={`${project.title} Screenshot`}
                                     width={1000}
-                                    height={600}
+                                    height={700}
                                     className="project-image"
                                 />
                             )}
                             <div className="project-tags">
                                 {project.languages?.map((lang, langIndex) => (
-                                    <p key={langIndex}>{lang}</p>
+                                    <p className={getLanguageClass(lang)} key={langIndex}>{lang}</p>
                                 ))}
                             </div>
                         </div>
