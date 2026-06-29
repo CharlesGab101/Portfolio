@@ -10,7 +10,7 @@ function Home() {
   const [animation, setAnimation] = React.useState(true);
 
   //======= Scroll Down functionality=======
-  const contactRef = useRef(null);
+  const contactRef = useRef<HTMLDivElement>(null);
   
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({ behavior: 'smooth' });
