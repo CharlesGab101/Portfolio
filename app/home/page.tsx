@@ -5,6 +5,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/dist/client/components/navigation";
 import { useRef } from 'react'
+import Email from "./Email.jsx";
 
 function Home() {
   const [animation, setAnimation] = React.useState(true);
@@ -53,6 +54,7 @@ function Home() {
           <p>Location: Anaheim, CA</p>
 
           <h1>Connect With Me!</h1>
+          <Email />
       </div> 
       
 

@@ -89,9 +89,7 @@ function Project() {
                 <h1 className="name-page">Projects</h1>
                 <div className="nav-links">
                     
-                        <Link href="/"><button>Home</button></Link>
-                    
-                    
+                    <Link href="/"><button>Home</button></Link>
                     <Link href="/about"><button>About</button></Link>
                 </div>
             </nav>
