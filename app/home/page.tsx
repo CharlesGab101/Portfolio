@@ -6,6 +6,8 @@ import Link from "next/link";
 import { usePathname } from "next/dist/client/components/navigation";
 import { useRef } from 'react'
 import Email from "./Email.jsx";
+import Game from "./game/Game.jsx" 
+
 
 function Home() {
   const [animation, setAnimation] = React.useState(true);
@@ -30,13 +32,18 @@ function Home() {
   return (
     
     <div>
+      
       <nav className="frame">
             <Link href="/about"><button>About</button></Link>
             <button onClick={scrollToContact}>Contact</button>
             <Link href="/projects"><button>Projects</button></Link>
       </nav>
-     <img src={animation ? "/gif_folder/MYNAME.gif" : "/gif_folder/MYNAME.png"} 
-     alt="My Name Is Charles Gabut" className={animation ? "text_header" : "text_header_static"} />
+    
+      <Game />
+      <img src={animation ? "/gif_folder/MYNAME.gif" : "/gif_folder/MYNAME.png"} 
+      alt="My Name Is Charles Gabut" className={animation ? "text_header" : "text_header_static"} />
+    
+     
      <Image
        src="/image/profile.jpg"
        alt="Profile Picture"
@@ -71,7 +78,6 @@ function Home() {
 
     </div>
   )
-  
-}
+  }
 
 export default Home;
