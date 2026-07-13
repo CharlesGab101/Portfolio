@@ -52,7 +52,15 @@ function Home() {
           <p>Email: kengabut@gmail.com</p>
           <p>Phone: 657-226-7547</p>
           <p>Location: Anaheim, CA</p>
-
+          <div className ="logo-button">
+            <Link href="https://www.linkedin.com/in/charlesgabut/">
+                <img src="/gif_folder/InBug-White.png" width={40} height={40}alt="InBug Logo" className="inbug-logo" />
+            </Link>
+            <Link href="https://github.com/CharlesGab101?tab=repositories">
+                <img src="/gif_folder/GitHub_Invertocat_White.png" width={40} height={40}alt="InBug Logo" className="inbug-logo" />
+            </Link>
+          </div>
+        
           <h1>Connect With Me!</h1>
           <Email />
       </div> 

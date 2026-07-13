@@ -568,3 +568,22 @@ h1 {
     font-size: 16px;
     cursor: pointer;
 }
+
+.logo-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.logo-button img {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                filter 0.3s ease-in-out;
+}
+
+.logo-button img:hover {
+    transform: translateY(-2px) scale(1.03);
+    filter: brightness(1.1);
+    cursor: pointer;
+}

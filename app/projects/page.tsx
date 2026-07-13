@@ -8,7 +8,7 @@ import projectData, {ProjectType} from './descriptions'
 interface ProjectCardProps {
     project: ProjectType;
 }
-
+ 
 function getLanguageClass(language: string) {
     const value = language.toLowerCase();
 

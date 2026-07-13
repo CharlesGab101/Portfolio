@@ -53,7 +53,11 @@ const projectData: ProjectType[] = [
     languages: ["C++", "HTML/CSS"]
   },
   {
-    title: "Stop Motion Project Winner of 2023 (Film Production)",
+    title: "Stop Motion Project Winner of 2023",
+    image: "/gif_folder/mq2.png",
+    url: "https://youtu.be/4EqY4A0PPCo",
+    description: "This project is a stop motion animation that I created for my film production class. It was a project where we had to create a short film using stop motion animation techniques. We used clay and other materials to create the characters and sets. The film was about a character who goes on an adventure to find a lost treasure. It was a fun and challenging project that taught me a lot about the art of stop motion animation.",
+    text: "View Video",
     languages: ["Premiere Pro"]
   },
   
