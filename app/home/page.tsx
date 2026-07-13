@@ -3,10 +3,13 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/dist/client/components/navigation";
+import dynamic from "next/dynamic";
 import { useRef } from 'react'
 import Email from "./Email.jsx";
-import Game from "./game/Game.jsx" 
+
+const Game = dynamic(() => import("./game/Game.jsx"), {
+  ssr: false,
+});
 
 
 function Home() {
