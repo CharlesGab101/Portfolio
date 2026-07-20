@@ -11,7 +11,6 @@ export default function About() {
             </nav>
             <h1>About Me</h1>
             <div className="about">
-                
                 <div>
                     <Image
                         src="/image/profile.jpg"
