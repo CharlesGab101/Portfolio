@@ -12,15 +12,33 @@ interface ProjectCardProps {
 function getLanguageClass(language: string) {
     const value = language.toLowerCase();
 
-    if (value.includes("c++")) return "project-tag tag-cpp";
-    if (value.includes("html/css")) return "project-tag tag-web";
-    if (value.includes("javascript")) return "project-tag tag-javascript";
-    if (value.includes("typescript")) return "project-tag tag-typescript";
-    if (value.includes("java")) return "project-tag tag-java";
-    if (value.includes("python")) return "project-tag tag-python";
-    if (value.includes("react")) return "project-tag tag-react";
-    if (value.includes("premiere")) return "project-tag tag-video";
-    if (value.includes("object-oriented")) return "project-tag tag-oop";
+    if (value.includes("c++")) {
+        return "project-tag tag-cpp";
+    }
+    if (value.includes("html/css")) {
+        return "project-tag tag-cpp";
+    }
+    if (value.includes("javascript")) {
+        return "project-tag tag-javascript";
+    }
+    if (value.includes("typescript")) {
+        return "project-tag tag-typescript";
+    }
+    if (value.includes("java")) {
+        return "project-tag tag-java";
+    }
+    if (value.includes("python")) {
+        return "project-tag tag-python";
+    }
+    if (value.includes("react")) {
+        return "project-tag tag-react";
+    }
+    if (value.includes("premiere")) {
+        return "project-tag tag-video";
+    }
+    if (value.includes("object-oriented")) {
+        return "project-tag tag-oop";
+    }
 
     return "project-tag tag-default";
 }

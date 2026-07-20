@@ -35,28 +35,34 @@ function Home() {
   return (
     
     <div>
-      
       <nav className="frame">
             <Link href="/about"><button>About</button></Link>
             <button onClick={scrollToContact}>Contact</button>
             <Link href="/projects"><button>Projects</button></Link>
       </nav>
+
+      <div className="name-image-wrapper">
+        
+        <img
+          src="/gif_folder/MYNAME.gif"
+          alt="My Name Is Charles Gabut"
+          className="text_header_static"
+        />
+        
+         <Image
+          src="/image/profile.jpg"
+          alt="Profile Picture"
+          width={300}
+          height={300}
+          className="profile-picture"
+        />
+        
+      </div>
+        <Game />
     
-      <Game />
-      <img src={animation ? "/gif_folder/MYNAME.gif" : "/gif_folder/MYNAME.png"} 
-      alt="My Name Is Charles Gabut" className={animation ? "text_header" : "text_header_static"} />
-    
-     
-     <Image
-       src="/image/profile.jpg"
-       alt="Profile Picture"
-       width={300}
-       height={300}
-       className="profile-picture"
-     />
      
      <section ref={contactRef} style={{ minHeight: '100vh' }}>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col ">
           <h1>Let's Connect!</h1>
           <h1>Contact information</h1>
           <p>Email: kengabut@gmail.com</p>

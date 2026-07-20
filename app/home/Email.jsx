@@ -1,8 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 
-
-
 const Email = () => {
 
     const [name, setName] = React.useState('');

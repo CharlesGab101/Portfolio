@@ -45,7 +45,10 @@ const projectData: ProjectType[] = [
   {
     title: "Food Wastage Tracker",
     description: "Built a final Object-Oriented Programming course project, a web-based application utilizing C++, that empowers individuals to track, manage, and minimize their food waste",
-    languages: ["C++", "Object-Oriented Programming"]
+    languages: ["C++", "Object-Oriented Programming"],
+    image: "/gif_folder/foodtracker.gif",
+    url: "https://github.com/CharlesGab101/Food-Wastage-Tracker.git",
+    text: "View Source Code"
   },
    {
     title: "Book Store (Doubly Linked List Adapter)",

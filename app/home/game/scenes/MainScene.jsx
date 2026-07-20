@@ -33,7 +33,7 @@ export default class MainScene extends Phaser.Scene {
       repeat: -1,
     });
 
-    const player = this.add.sprite(70, 200, "player");
+    const player = this.add.sprite(70, 300, "player");
 
     player.setScale(0.5);
 

@@ -1,15 +1,14 @@
 .frame {
-    /* Desktop - 1 */
-
-    /* Frame 2 */
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 20;
     align-items: center;
     justify-content: center;
     gap: 100px;
     width: 100%;
-    height: 152px;
+    min-height: 152px;
     border-bottom: 2px solid #4d4d4d;
     background: #000000;
 }
@@ -35,18 +34,19 @@
 .frame_about {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 20;
     align-items: center;
-    justify-content: right;
-    flex-direction: row;
-    gap: 5px;
+    justify-content: flex-end;
+    gap: 16px;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
+    padding: 0 40px;
     background: #434141;
 }
 
 .frame_about button {
-    
     background: none;
     border-radius: 16px;
     padding: 6px 22px;
@@ -55,8 +55,6 @@
     font-size: 20px;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
-    margin-right: 60px;
-    
 }
 
 .frame_about button:hover {
@@ -67,15 +65,16 @@
 .frame_skills {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 20;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    gap: 5px;
+    gap: 16px;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     padding: 0 40px;
-    background: #434141; 
+    background: #434141;
 }
 
 .name-page {
@@ -91,7 +90,6 @@
 }
 
 .frame_skills button {
-    
     background: none;
     border-radius: 16px;
     padding: 6px 22px;
@@ -100,7 +98,6 @@
     font-size: 20px;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
-    margin-right: 60px;
 }
 
 .frame_skills button:hover {
@@ -125,35 +122,51 @@
     color: #FFFFFF;
 
     flex-wrap: wrap;
+    z-index: -1;
+}
+
+.name-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+    padding: 4rem 1rem 2rem;
+    gap: 1.5rem;
 }
 
 .text_header_static {
-    /* Hi I am CharlesYour reliable Front-end Developer */
-
-    position: absolute;
-    width: 672px;
-    height: 350px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    display: flex;
-    align-items: center;
+    width: min(672px, 90vw);
+    height: auto;
+    display: block;
+    margin: 0;
     text-align: center;
-
     color: #FFFFFF;
-    flex-wrap: wrap;
+    object-fit: contain;
+    z-index: 1;
 }
 
 .profile-picture {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 20%;
-    margin-left: 50%;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
 }
+
+ @keyframes fadeIn {
+        from {
+        
+            opacity: 0;
+        }
+        to {
+            
+            opacity: 1;
+        }
+    }
 
 .profile-picturep-about{
     object-fit: cover;
@@ -275,9 +288,9 @@ h1 {
     align-items: center;
     gap: 40px;
     padding: 40px;
+    padding-top: 150px;
     max-width: 1800px;
     margin: auto;
-    margin-top: 150px;
 }
 .about p {
     color: #ffffff;
@@ -330,9 +343,9 @@ h1 {
     grid-template-columns: repeat(4, minmax(300px, 1fr));
     gap: 40px;
     padding: 40px;
+    padding-top: 200px;
     max-width: 1800px;
     margin: auto;
-    margin-top: 200px;
 }
 
 /* 1. Base Container: Sets the grid cell dimensions and 3D environment */
@@ -599,7 +612,6 @@ h1 {
     cursor: pointer;
 }
 
-
 /*Animated*/
 
 .animated-1 {
@@ -607,7 +619,6 @@ h1 {
     height: 400px;
     margin: 0 auto 2rem;
     border-radius: 24px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    padding-left: 320px;
     overflow: hidden;
-    padding-left: 300;
 }
